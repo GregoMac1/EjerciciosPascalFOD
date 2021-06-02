@@ -38,7 +38,7 @@ procedure compactarIngresos (var archivo,archivoNuevo:bin);
     while (ingreso.codigo <> valoralto) do begin
       ingresoNuevo.nombre:=ingreso.nombre;
       ingresoNuevo.monto:=0;
-      while (ingreso.codigo = ingresoSig.codigo) do begin
+      while (ingreso.codigo <> valoralto) and (ingreso.codigo = ingresoSig.codigo) do begin
         ingresoNuevo.monto:=ingresoNuevo.monto+ingreso.monto;
         leer(archivo,ingreso);
       end;
