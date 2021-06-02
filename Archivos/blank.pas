@@ -1,6 +1,6 @@
 program blank;
 const
-valoralto = 
+valoralto = 9999;
 type
 
 procedure
