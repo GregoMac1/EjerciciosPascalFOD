@@ -27,8 +27,8 @@ procedure minimo (var VD:vectorDeDetalles; var VR:vectorDeRegistros; var min:reg
   begin
     min.codigo:=9999;
     for i:= 1 to cantDetalles do begin
-      if (Vreg[i].codigo <> valoralto) & (Vreg[i].codigo < min.codigo) then begin
-        min:=Vreg[i];
+      if (VR[i].codigo <> valoralto) & (VR[i].codigo < min.codigo) then begin
+        min:=VR[i];
         iMin:=i;
       end;
     end;
@@ -65,8 +65,8 @@ var
 begin
   for i:=1 to cantDetalles do begin
     Str(i,iString);
-    //assign(V[i],'detalle' + iString);
-    Leer(V[i],vectorReg[i]);
+    assign(V[i],'detalle' + iString);
+    Leer(V[i],VR[i]);
   end;
   assign(maestro,'maestrop2ej3.dat');
   actualizarMaestro(maestro,VD,VR);
