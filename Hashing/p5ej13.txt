@@ -2,6 +2,8 @@ f(x) = x MOD 11
 S. progresiva encadenada con
 área de desborde separado
 * = Clave intrusa
+LP/EP = Área principal
+LS/ES = Área separada
 
 Dir   Enlace    Clave           Dir   Enlace    Clave
 0       -1      44              0       -1      
@@ -17,8 +19,8 @@ Dir   Enlace    Clave           Dir   Enlace    Clave
 10      -1
 
 ///////////////////////////////////////////////////////
-DE: 45%
-+23: L1
+DE: 40%
++23: LP1,LS0,ES0,EP1
 
 Dir   Enlace    Clave           Dir   Enlace    Clave
 0       -1      44              0       -1      23
@@ -34,8 +36,8 @@ Dir   Enlace    Clave           Dir   Enlace    Clave
 10      -1
 
 ///////////////////////////////////////////////////////
-DE: 45%
-+48: L4
+DE: 46%
++48: LP4,LS0,LS1,ES1,EP4
 
 Dir   Enlace    Clave           Dir   Enlace    Clave
 0       -1      44              0       -1      23
@@ -51,8 +53,8 @@ Dir   Enlace    Clave           Dir   Enlace    Clave
 10      -1
 
 ///////////////////////////////////////////////////////
-DE: 54%
-+47: L3,E3
+DE: 53%
++47: LP3,EP3
 
 Dir   Enlace    Clave           Dir   Enlace    Clave
 0       -1      44              0       -1      23
@@ -68,8 +70,8 @@ Dir   Enlace    Clave           Dir   Enlace    Clave
 10      -1
 
 ///////////////////////////////////////////////////////
-DE: 54%
-+67: L1
+DE: 60%
++67: LP1,LS0,LS1,LS2,ES2,EP1
 
 Dir   Enlace    Clave           Dir   Enlace    Clave
 0       -1      44              0       -1      23
@@ -85,8 +87,8 @@ Dir   Enlace    Clave           Dir   Enlace    Clave
 10      -1
 
 ///////////////////////////////////////////////////////
-DE: 54%
-+59: L4
+DE: 66%
++59: LP4,LS0,LS1,LS2,LS3,ES3,EP4
 
 Dir   Enlace    Clave           Dir   Enlace    Clave
 0       -1      44              0       -1      23
