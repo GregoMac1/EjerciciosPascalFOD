@@ -41,6 +41,7 @@ procedure actualizarMaestro (var maestro:bin; var VD:vectorDeDetalles; var VR:ve
   begin
     for i:= 1 to cantDetalles do begin
       reset(VD[i]);
+      Leer(VD[i],VR[i]);
     end;
     reset(maestro);
     minimo(VD,VR,min);
@@ -65,8 +66,7 @@ var
 begin
   for i:=1 to cantDetalles do begin
     Str(i,iString);
-    assign(V[i],'detalle' + iString);
-    Leer(V[i],VR[i]);
+    assign(V[i],'detalle' + iString);    
   end;
   assign(maestro,'maestrop2ej3.dat');
   actualizarMaestro(maestro,VD,VR);
