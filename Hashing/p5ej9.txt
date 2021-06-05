@@ -68,7 +68,11 @@ Dir   Enlace    Clave
 
 /////////////////////
 DE: 81%
-+59: L4,L5,L6,L7,L8,E8,E6,E4
++59: L4,L5,L6,L7,L8,E8,L1,E6,E4
+Busco lugar para la intrusa, la inserto,
+voy a su dirección base y recorro la lista de sinónimos
+hasta encontrar el anterior. Actualizo el enlace y después
+escribo la clave nueva.
 
 Dir   Enlace    Clave
 0       -1      
