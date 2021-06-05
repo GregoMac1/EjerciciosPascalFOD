@@ -66,7 +66,7 @@ procedure regATexto (var alumno:regAlumno; var txt:text);
   begin
     write(txt,'Dni: ');write(txt,alumno.DNI);write(txt,'. ');
     write(txt,'Codcarrera: ');write(txt,alumno.codCarrera);write(txt,'. ');
-    write(txt,'Alumno moroso.');   
+    write(txt,'Alumno moroso.');write(txt,'\n');
   end;
 procedure incisoB (var maestro:binM; var txt:text);
   var
