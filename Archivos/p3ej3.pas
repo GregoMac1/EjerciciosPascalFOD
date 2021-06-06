@@ -54,7 +54,7 @@ procedure agregarNovela (var archivo:bin); //primera vez que implemento este mod
       write(archivo,novela);
     end
     else begin
-      seek(archivo,filesize(archivo));
+      seek(archivo,filesize(archivo)-1);
       leerNovela(novela);
       write(archivo,novela);
     end;    
