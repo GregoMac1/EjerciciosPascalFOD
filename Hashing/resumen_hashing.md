@@ -28,7 +28,7 @@ Si voy a almacenar una clave, pero en su lugar hay una intrusa, muevo la clave i
 
 *Pregunta:* que pasa cuando tengo que mover una clave intrusa y tengo que pasar a otra intrusa?
 
-*Respuesta:* en la direccion base, actualizo el enlace a la direccion mas lejana y en la nueva direccion pongo el enlace anterior
+*Respuesta:* en la direccion anterior, actualizo el enlace a la direccion mas lejana y en la nueva direccion pongo el enlace anterior. Para poder encontrar la direccion anterior a la intrusa que tengo que mover tengo que aplicarle la funcion e ir recorriendo hasta encontrar a la que en el enlace apuntaba a la intrusa que movi, y actualizar ese enlace. Este procedimiento me va a agregar lecturas extras.
 
 *Busca que la mayor cantidad de claves esten en su direccion base por lo tanto las busquedas son mejores*
 
@@ -59,11 +59,12 @@ Actualizo los enlaces.
 # Dispersion doble
 
 Tiene 2 funciones de dispersion. A la 2da funcion siempre se le suma 1 por si el MOD da 0 tiene que existir un desplazamiento.
-Si hay desborde, aplico la siguiente funcion de dispersion. Si vuelve a existir desborde, le voy sumando la primera funcion de dispersion hasta encontrar un lugar libre.
+Si hay desborde, aplico la siguiente funcion de dispersion que es el desplazamiento. Para todos los siguientes desbordes le sumo el desplazamiento.
 
 ## Bajas
 
 Se pone una marca de borrado ####
+
 **PREGUNTAR:** siempre se usa la marca de borrado?
 
 
