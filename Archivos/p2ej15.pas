@@ -1,4 +1,4 @@
-program p2ej15; //creo que bien
+program p2ej15; //en el minimo, no alcanza con solo comparar el dni
 const
 valoralto = 9999;
 cantDetalles = 10; //la consigna no aclara
