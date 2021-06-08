@@ -23,6 +23,7 @@ procedure bajasLogicas (var maestro:bin; var detalle:binDetalle);
     reset(detalle);
     leer(detalle,codigoD);
     while (codigoD <> valoralto) do begin
+      seek(maestro,0);
       read(maestro,prenda);
       while (prenda.codigo <> codigoD) do //se asume que existe en el maestro
         read(maestro,prenda);
